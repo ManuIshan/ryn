@@ -130,7 +130,7 @@ export default function AboutPro() {
           <span className="about-stat-num">
             <Counter target={2} />
           </span>
-          <p className="about-stat-title">Experience</p>
+          <p className="about-stat-title">Years ofExperience</p>
           <p className="about-stat-sub">Creating elegant designs</p>
         </div>
 
