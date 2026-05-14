@@ -1,0 +1,178 @@
+/* NAVBAR */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 60;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+
+.logo {
+  font-family: "Bdogrotesk", Arial;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* PLUS ICON */
+.plus-icon {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  cursor: pointer;
+  z-index: 70;
+}
+
+.plus-icon::before,
+.plus-icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease;
+}
+
+/* horizontal */
+.plus-icon::before {
+  width: 100%;
+  height: 2px;
+  background: #fff;
+}
+
+/* vertical */
+.plus-icon::after {
+  width: 2px;
+  height: 100%;
+  background: #fff;
+}
+
+/* CROSS */
+.plus-icon.active::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #000 !important;
+}
+
+.plus-icon.active::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+  background: #000 !important;
+}
+
+/* 🔥 PREVENT FLICKER */
+.staggered-menu-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 420px;
+  height: 100vh;
+  background: white;
+  z-index: 50;
+  padding: 6em 2em;
+
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  will-change: transform;
+}
+
+.staggered-menu-panel.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* PRELAYERS */
+.sm-prelayers {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 420px;
+  height: 100vh;
+  z-index: 40;
+  pointer-events: none;
+  
+}
+
+.sm-prelayer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%);
+}
+
+.layer1 { background:white; }
+.layer2 { background: black; }
+
+/* QUOTE */
+.sm-quote {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: #000;
+  opacity: 0.6;
+  text-align: center;
+}
+
+/* MENU */
+.sm-panel-list {
+  list-style: none;
+  padding: 0;
+  z-index: 2;
+}
+
+.sm-panel-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* 🔥 important */
+font-size: 55px;
+font-weight: 500;
+  gap: 12px; /* 🔥 controls distance between text & number */
+
+  width: fit-content; /* 🔥 prevents stretching */
+}
+
+.sm-panel-itemLabel {
+  display: inline-block;
+}
+
+/* NUMBER */
+.sm-number {
+  margin-left: 8px;
+  top: 12px;
+  font-size: 14px;
+  color: #5227ff;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .staggered-menu-panel,
+  .sm-prelayers {
+    width: 100%;
+  }
+
+  .sm-panel-item {
+    font-size: 3rem;
+  }
+}/* 🔥 BLOCK CLICK WHEN CLOSED */
+.sm-prelayers,
+.staggered-menu-panel {
+  pointer-events: none;
+}
+
+/* 🔥 ENABLE WHEN OPEN */
+.sm-prelayers.active,
+.staggered-menu-panel.active {
+  pointer-events: auto;
+}.sm-panel-item {
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 5;
+}

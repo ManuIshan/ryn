@@ -1,0 +1,290 @@
+.pricing {
+  background: #0b0b0b;
+  color: #fff;
+}
+
+.pricing-content {
+  padding: 120px 60px;
+}
+
+/* TOP */
+.pricing-topbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.5);
+}
+
+/* TOGGLE */
+.toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.toggle-inner {
+  display: flex;
+  position: relative;
+  border: 2px solid rgba(255,255,255,0.15);
+  overflow: hidden;
+}
+
+.toggle-inner button {
+  padding: 10px 40px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  z-index: 2;
+  font-size: 14px;
+}
+
+.toggle-inner button.active {
+  color: #000;
+}
+
+.toggle-bg {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  z-index: 1;
+}
+
+/* GRID */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: #111;
+  border-radius: 20px;
+  padding: 18px;
+  border: 2px solid rgba(255,255,255,0.35);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 520px;
+}
+
+/* WHITE HEAD */
+.card-head {
+  background: transparent;
+  color:white;
+  border-radius: 50px;
+  padding: 22px;
+  text-align: center;
+}
+
+.card-head h3 {
+  font-size: 18px;
+}
+
+.card-head h2 {
+  font-size: 34px;
+  margin-top: 8px;
+}
+
+.card-head h2 span {
+  font-size: 18px;
+  margin-left: 4px;
+}
+
+/* BODY */
+.card-body {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.point {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  align-items: flex-start;
+}
+
+/* BUTTON */
+.btn {
+  margin-top: 20px;
+  padding: 12px;
+  border: 2px solid #fff !important;
+  background: transparent;
+  color: #fff !important;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .pricing-content {
+    padding: 80px 20px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: auto;
+  }
+}
+
+/* GEMINI ICON */
+.gem-icon {
+  font-size: 14px;
+  line-height: 1;
+  margin-top: 4px;
+  background: linear-gradient(135deg, #ffffff, #888);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  flex-shrink: 0;
+}
+
+/* =========================
+   🔥 PRICING HEADLINE
+========================= */
+
+.pricing-focus-block {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.pricing-headline {
+  padding-left: calc(220px + 56px);
+  margin-bottom: 80px;
+}
+
+.pricing-headline h2 {
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+/* =========================
+   🔥 RESPONSIVE IMPROVEMENTS
+========================= */
+
+/* LARGE LAPTOP */
+@media (max-width: 1200px) {
+  .pricing-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .pricing-headline {
+    padding-left: 0;
+  }
+
+  .pricing-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* SMALL TABLET */
+@media (max-width: 768px) {
+  .toggle-inner button {
+    padding: 8px 20px;
+    font-size: 12px;
+  }
+
+  .card-head h2 {
+    font-size: 26px;
+  }
+
+  .point {
+    font-size: 13px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+
+  .pricing-headline h2 {
+    font-size: 30px;
+  }
+
+  .card {
+    border-radius: 30px;
+    padding: 14px;
+    /* 🔥 NEW: reduce width */
+    max-width: 400px !important;
+    margin: 20px;
+  }
+
+  .card-head {
+    border-radius: 30px;
+    padding: 18px;
+  }
+
+  .btn {
+    padding: 10px;
+    font-size: 13px;
+  }
+}
+
+/* SMALL MOBILE */
+/* === BOOK A SLOT BUTTON (TrueFocus style from hh3) === */
+.book-slot-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.hh3-cv-btn {
+  padding: 12px 32px;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: transparent;
+  cursor: pointer;
+  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.hh3-cv-btn:focus {
+  outline: none;
+}
+
+.hh3-cv-btn span {
+  font-size: 14px !important;
+  color: white !important;
+}.card-book-btn {
+  width: 100%;
+  margin: 20px auto 0;
+  display: block;
+  padding: 11px 0;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.35);
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 80px;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.card-book-btn:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.7);
+}
