@@ -68,9 +68,9 @@ export default function Party() {
   }, []);
 
   const partyImages = [
-    'p34.jpeg', 'p33.jpeg', 'p7.jpeg', 'p5.jpeg', 'p6.jpeg', 'p4.jpeg', 'p1.jpeg', 'p9.jpeg', 'p12.jpeg', 'p13.jpeg',
-    'p19.jpeg', 'p18.jpeg', 'p20.jpeg', 'p16.jpeg', 'p17.jpeg', 'p14.jpeg', 'p26.jpeg', 'p25.jpeg', 'p27.jpeg', '28.jpeg','29.jpeg', 'p30.jpeg',
-    'p2.jpeg', 'p3.jpeg', 'p8.jpeg', 'p10.jpeg', 'p11.jpeg', 'p15.jpeg', 'p21.jpeg', 'p22.jpeg', 'p23.jpeg', 'p24.jpeg', 'p31.jpeg', 'p32.jpeg','p35.jpeg',
+    'p34.jpeg', 'p33.jpeg', 'p7.jpeg', 'p5.jpeg', 'p6.jpeg', 'p4.jpeg', 'p1.jpeg', 'pn1.jpg', 'p12.jpeg', 'pn2.jpg',
+    'p19.jpeg', 'p18.jpeg', 'p20.jpeg', 'p16.jpeg', 'p17.jpeg', 'p14.jpeg', 'p26.jpeg', 'p25.jpeg', 'p27.jpeg', 'pn3.jpg','pn5.jpg', 'p30.jpeg',
+    'pn4.jpg', 'p3.jpeg', 'p8.jpeg', 'p10.jpeg', 'p11.jpeg', 'p15.jpeg', 'p21.jpeg', 'p22.jpeg', 'p23.jpeg','p35.jpeg',
   ];
 
   return (

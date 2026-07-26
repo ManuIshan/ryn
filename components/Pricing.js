@@ -61,51 +61,37 @@ export default function Pricing() {
 
   const bridal = [
     {
-      title: 'Palm Length',
-      price: '₹250',
-      points: [
-        'Palm-focused bridal motifs',
-        'Intricate florals & mandalas',
-        'Time: 20-30 mins',
-        'Elegant bridal look',
-        'Perfect for minimal brides',
-        'Clean finger detailing'
-      ]
-    },
-    {
       title: 'Bangle Length',
-      price: '₹350',
       points: [
+        'Henna cones included',
         'Palm to wrist flow',
         'Bridal floral accents',
         'Time: 45-60 mins',
         'Moderate coverage',
-        'Balanced detailing',
-        'Stylish wrist finish'
+        'Balanced detailing'
       ]
     },
     {
       title: 'Mid Arm Length',
-      price: '₹400',
       points: [
+        'Henna cones included',
         'Palm to mid-arm',
         'Full finger coverage',
         'Time: 60-100 mins',
         'Premium bridal look',
-        'Dense patterns',
-        'Modern + traditional mix'
+        'Dense patterns'
       ]
     },
     {
       title: 'Elbow Length',
-      price: '₹800',
+      badge: 'Best Package',
       points: [
+        'Henna cones included',
         'Full extended design',
         'Dense detailing',
         'Time: 90-120 mins',
         'Luxury bridal',
-        'Grand wedding look',
-        'Heavy intricate work'
+        'Grand wedding look'
       ]
     }
   ];
@@ -113,52 +99,38 @@ export default function Pricing() {
   const party = [
     {
       title: 'Palm Length',
-      price: '₹200',
       points: [
+        'Henna cones included',
         'Quick elegant design',
         'Minimal floral',
         'Time: 15-25 mins',
         'Casual events',
-        'Light detailing',
-        'Simple patterns'
+        'Light detailing'
       ]
     },
     {
       title: 'Wrist Length',
-      price: '₹250',
       points: [
+        'Henna cones included',
         'Balanced wrist design',
         'Modern patterns',
         'Time: 25-35 mins',
         'Events',
-        'Trendy looks',
-        'Clean finish'
+        'Trendy looks'
       ]
     },
     {
       title: 'Mid Arm Length',
-      price: '₹350',
       points: [
+        'Henna cones included',
         'Eye-catching style',
         'Fusion patterns',
         'Time: 45-55 mins',
         'Festive',
-        'Bold designs',
-        'Creative layouts'
+        'Bold designs'
       ]
     },
-    {
-      title: 'Elbow Length',
-      price: '₹750',
-      points: [
-        'Extended mehndi',
-        'Elegant flow',
-        'Time: 60-75 mins',
-        'Large events',
-        'Detailed work',
-        'Stylish coverage'
-      ]
-    }
+    
   ];
 
   const data = type === 'bridal' ? bridal : party;
@@ -222,13 +194,10 @@ export default function Pricing() {
 
             {data.map((card, i) => (
               <div className="card" key={i}>
+                {card.badge ? <span className="card-badge">{card.badge}</span> : null}
 
                 <div className="card-head">
-                  <h3>{card.title}</h3>
-                  <p className="sub" style={{ fontSize: '12px' }}>
-                    
-                  </p>
-                  <h2>{card.price} <span>/ side</span></h2>
+                  <h3 className="card-title">{card.title}</h3>
                 </div>
 
                 <div className="card-body">

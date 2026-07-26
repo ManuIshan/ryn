@@ -61,13 +61,13 @@ const workItems = [
   {
     id: 1,
     title: 'Bridal',
-    image: '/bridalcover.jpeg',
+    image: '/bcover.jpg',
     category: 'Bridal Henna',
   },
   {
     id: 2,
     title: 'Party',
-    image: '/partycover.jpeg',
+    image: '/pcover.jpg',
     category: 'Party Henna',
   },
 ];

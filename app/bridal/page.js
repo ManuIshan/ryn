@@ -68,8 +68,8 @@ export default function Bridal() {
   }, []);
 
   const bridalImages = [
-    'b2.jpeg', 'b14.jpeg', 'b11.jpeg', 'b12.jpeg','b6.jpeg', 'b9.jpeg', 'b16.jpeg', 'b3.jpeg', 'b8.jpeg', 'b13.jpeg',
-    'b4.jpeg', 'b17.jpeg', 'b18.jpeg', 'b15.jpeg', 'b1.jpeg', 'b7.jpeg', 'b10.jpeg', 'b19.jpeg','bridalcover.jpeg'
+    'bn13.jpg', 'bn6.jpg', 'bn14.jpg', 'bn1.jpg','b3.jpeg', 'bn8.jpg','bn7.jpg', 'b8.jpeg', 'b11.jpeg', 'bn2.jpg',
+    'b4.jpeg', 'b17.jpeg', 'b18.jpeg', 'b15.jpeg', 'bn9.jpg', 'b7.jpeg', 'b10.jpeg', 'b19.jpeg','bn3.jpg', 'bn5.jpg', 'b14.jpeg','bn4.jpg','b16.jpeg','b9.jpeg','b1.jpeg','bn10.jpg','bn11.jpg','b2.jpeg','bn15.jpg'
   ];
 
   return (
